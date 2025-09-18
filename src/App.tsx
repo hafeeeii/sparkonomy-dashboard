@@ -10,6 +10,8 @@ import { InvoicesListCard } from './components/InvoicesListCard'
 import { TimeFilterCard, type Period } from './components/TimeFilterCard'
 import { Separator } from './components/ui/separator'
 import { UploadInvoiceButton } from './components/UploadInvoiceButton'
+import Logo from '/public/logo.svg';
+
 
 function App() {
   const [date, setDate] = useState<Date | undefined>(new Date())
@@ -146,7 +148,7 @@ function App() {
         <Separator orientation='horizontal' className='mt-20' />
         {/* Footer */}
         <div className='pb-5 text-center text-xs text-gray-400'>
-          <img src='/logo.svg' alt='Logo' className='mb-1 inline-block' />
+          <img src={Logo} alt='Logo' className='mb-1 inline-block' />
           <p className='text-[10px]'>sparking the creator economy</p>
         </div>
       </div>
